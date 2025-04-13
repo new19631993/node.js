@@ -1,0 +1,14 @@
+
+services:
+  node-app:
+    container_name: express-app-container
+    build: .
+    volumes:
+     - ./src:/app
+    ports:
+     - "4000:4000" 
+       
+  
+    
+
+
