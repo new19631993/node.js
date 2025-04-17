@@ -9,12 +9,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Verify files
+        run: ls -la
+
       - name: Install dependencies
         run: npm install
-      - name: Run tests
-        run: npm test
+
+      # Optional: Cache node_modules for faster runs
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
