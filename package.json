@@ -13,6 +13,6 @@
     "express": "^4.21.2",
     "newrelic": "^12.17.0",
     "winston": "^3.17.0",
-    "private-repo": "git+https://your-private-repo-url.git"
+    "private-repo": "git+https://github.com/new19631993/node.js"
   }
 }
