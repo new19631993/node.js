@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "newrelic": "^12.17.0",
-    "winston": "^3.17.0",
-    "private-repo": "git+https://github.com/new19631993/node.js"
+    "pg": "^8.15.1",
+    "private-repo": "git+https://github.com/new19631993/node.js",
+    "winston": "^3.17.0"
   }
 }
